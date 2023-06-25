@@ -1,5 +1,4 @@
-import server from "./server/Server"
-
-server.listen(3030, () => {
-    console.log("Server is running on port 3030")
-})
+import server from './server/Server';
+server.listen(process.env.PORT || 5050, () => {
+  console.log(`Server is running on port ${process.env.PORT || 5050}`);
+});
