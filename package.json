@@ -27,6 +27,8 @@
   },
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "build": "ts-node-dev src/index.ts",
+    "start": "node build/index.js"
   }
 }
